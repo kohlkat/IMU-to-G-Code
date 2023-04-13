@@ -1,35 +1,75 @@
 # 🤖 IMU-to-G-code Real-time Conversion System
 
-This project aims to develop a system that can convert Inertial Measurement Unit (IMU) spatial readings into G-code commands for CNC machines in real-time. By leveraging IMU data, this system can enable new applications in robotics, automation, and human-machine interaction.
 
-## 🚀 Project Roadmap
 
-### 🔧 Phase 1: Prototype Development
-1. Select an IMU for prototyping: MPU-6050 or BNO055
-2. Choose a platform for prototyping: Arduino (e.g., Arduino Uno or Arduino Mega)
-3. Develop and test the IMU data acquisition and processing system
-4. Implement a basic G-code conversion algorithm
-5. Integrate the conversion algorithm with a CNC controller system
-6. Evaluate and refine the prototype
 
-### ⚙️ Phase 2: Performance Optimization
-1. Evaluate the performance of the prototype and identify areas for improvement
-2. Optimize the IMU data processing algorithms for accuracy and efficiency
-3. Implement advanced G-code conversion techniques
-4. Test the improved system and compare performance with the prototype
 
-### 🏭 Phase 3: Production-Ready Development
-1. Select a high-performance hardware platform for the final product (e.g., STM32, Raspberry Pi, or other ARM Cortex-M microcontroller)
-2. Port the developed code to the new hardware platform
-3. Optimize the software for real-time performance
-4. Implement safety features and error handling
-5. Test and validate the production-ready system
 
-### 📚 Phase 4: Documentation and Maintenance
-1. Create user manuals and technical documentation
-2. Develop tutorials and guides for users and developers
-3. Maintain the codebase, addressing bugs and feature requests
-4. Collaborate with the community to improve and expand the system
+
+
+
+# 🌐 IMU-to-G-code
+
+This project aims to create a system that can convert IMU (Inertial Measurement Unit) data into G-code for CNC machines, while also considering safety precautions to prevent damage to the CNC machine and the workpiece. The system uses a microcontroller with an RTOS (Real-Time Operating System) for efficient multitasking and processing.
+
+## 📚 Table of Contents
+1. [🔩 Hardware Requirements](#hardware-requirements)
+2. [💾 Software Requirements](#software-requirements)
+3. [🛠️ Setup and Configuration](#setup-and-configuration)
+4. [📟 Microcontroller Code Structure](#microcontroller-code-structure)
+5. [🔰 Safety Precautions and Collision Detection](#safety-precautions-and-collision-detection)
+6. [👓 Augmented Reality Capabilities](#augmented-reality-capabilities)
+7. [🚀 Future Development](#future-development)
+8. [🎯 Goals](#goals)
+9. [🌟 Getting Started] (#getting-started)
+10.[💡 Contributing](#contrubuting)
+11.[📄 License](#license)
+12.[📬 Contact](#contact)
+
+## 🔩 Hardware Requirements
+- Inertial Measurement Unit (IMU): 3DM-CX5-25
+- Microcontroller: STM32F7 series
+- CNC machine
+
+## 💾 Software Requirements
+- Real-Time Operating System (RTOS): FreeRTOS
+- Microcontroller Libraries: MSCL (MicroStrain Communication Library)
+- G-code generation library
+
+## 🛠️ Setup and Configuration
+1. Set up the microcontroller with the chosen RTOS (FreeRTOS).
+2. Configure the IMU with the MSCL library.
+3. Implement the G-code generation logic.
+
+## 📟 Microcontroller Code Structure
+1. Initialize system
+   - Configure microcontroller and peripherals
+   - Initialize FreeRTOS
+2. Start tasks
+   - IMU data acquisition task
+   - G-code generation task
+   - G-code sending task
+3. Run tasks in parallel (see [Microcontroller Flowchart](#microcontroller-flowchart) for detailed steps)
+
+## 🔰 Safety Precautions and Collision Detection
+The system checks for potential collisions by analyzing the generated G-code and comparing it with the current state of the CNC machine and workpiece. If a potential collision is detected, the system injects precautionary G-code to prevent damage.
+
+## 👓 Augmented Reality Capabilities
+The project aims to include AR capabilities, allowing users to visualize the CNC process in real-time with additional overlays and information.
+
+## 🚀 Future Development
+Potential future development includes gesture control, user-guided machining, and a wide range of applications across various industries.
+
+### 🎯 Goals
+✅ Choose a suitable microcontroller \
+✅ Choose an RTOS \
+✅ Set up communication with the IMU \
+✅ Convert IMU data to G-code \
+✅ Implement safety precautions \
+✅ Send G-code to the CNC machine \
+🔄 Implement augmented reality capabilities \
+🔄 Gesture control \
+🔄 Further user base research and development
 
 ## 🌟 Getting Started
 
@@ -53,6 +93,7 @@ We welcome contributions from the community! Please follow these steps to contri
 
 This project is licensed under the [MIT License](LICENSE).
 
-## 📫 Contact
+## 📬 Contact
 
 For questions, suggestions, or support, please reach out to the project maintainers at [dkohlkat@gmail.com](mailto: dkohlkat@gmail.com).
+
