@@ -1,15 +1,5 @@
 # 🤖 IMU-to-G-code Real-time Conversion System
 
-
-
-
-
-
-
-
-
-# 🌐 IMU-to-G-code
-
 This project aims to create a system that can convert IMU (Inertial Measurement Unit) data into G-code for CNC machines, while also considering safety precautions to prevent damage to the CNC machine and the workpiece. The system uses a microcontroller with an RTOS (Real-Time Operating System) for efficient multitasking and processing.
 
 ## 📚 Table of Contents
