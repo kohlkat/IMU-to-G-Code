@@ -11,7 +11,7 @@ This project aims to create a system that can convert IMU (Inertial Measurement 
 6. [👓 Augmented Reality Capabilities](#augmented-reality-capabilities)
 7. [🚀 Future Development](#future-development)
 8. [🎯 Goals](#goals)
-9. [🌟 Getting Started] (#getting-started)
+9. [🌟 Getting Started](#getting-started)
 10.[💡 Contributing](#contrubuting)
 11.[📄 License](#license)
 12.[📬 Contact](#contact)
