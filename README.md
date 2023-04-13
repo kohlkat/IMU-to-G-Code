@@ -12,9 +12,9 @@ This project aims to create a system that can convert IMU (Inertial Measurement 
 7. [🚀 Future Development](#future-development)
 8. [🎯 Goals](#goals)
 9. [🌟 Getting Started](#getting-started)
-10.[💡 Contributing](#contrubuting)
-11.[📄 License](#license)
-12.[📬 Contact](#contact)
+10. [💡 Contributing](#contrubuting)
+11. [📄 License](#license)
+12. [📬 Contact](#contact)
 
 ## 🔩 Hardware Requirements
 - Inertial Measurement Unit (IMU): 3DM-CX5-25
