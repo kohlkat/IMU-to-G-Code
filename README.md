@@ -51,7 +51,7 @@ This repository houses an innovative system designed to enhance CNC machine oper
 
 This section outlines the architecture of the CNC AI-enhanced Control System and the flow of data between its components. The following diagram provides a visual representation of the system's operation:
 
-![System Data Flow](images/system_data_flow.png)
+![System Data Flow](images/system-data-flow.png)
 
 ---
 
